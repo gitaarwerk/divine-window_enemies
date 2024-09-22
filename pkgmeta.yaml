@@ -1,18 +1,19 @@
-package-as: DivineWindow_Paladin
+package-as: DivineWindow_Enemies
 
-enable-nolib-creation: no
-
-move-folders:
-  DivineWindow: DivineWindow_Paladin
+required-dependencies:
+  - DivineWindow
 
 ignore:
-  - LICENSE
-  - README.md
-  - curseForgeText.txt
   - pkgmeta.yaml
+  - .gitignore
+  - .github
+  - .release
+  - .vscode
   - .gitignore
   - .vscode
   - .gitignore
   - .git
+  - Thumbs.db
+  - .DS_Store
 
 license-output: LICENSE.txt

@@ -1,0 +1,28 @@
+## Title: Divine Window: Enemies of Warcraft
+## Title-enEN: Divine Window: Enemies of Warcraft
+## Notes: Stained glass windows for Divine Window: Enemies of Warcraft
+## Notes-enEN: a non-typical configurable interface using stained glass design
+
+## RequiredDeps: DivineWindow
+
+## Interface: 110002
+## X-Min-Interface: 110002
+
+## Version: @project-version@
+## IconTexture: Interface\AddOns\DivineWindow_Enemies\addonIcon.jpg
+
+## Author: Darkrider, Dunemaul (EU)
+## LoadOnDemand: 0
+## DefaultState: enabled
+
+## X-Category: UI, Boss, Raids
+## X-Date: @build-date@
+## X-ResetVarsDate: 2024-10-21T00:00:00Z
+## X-License: All Rights Reserved
+## X-Website: https://www.curseforge.com/wow/addons/divine-window-enemies
+
+## X-Curse-Project-ID: 1102211
+## X-Wago-ID: ZKxqm3Gk
+
+Src/Init.lua
+Src/Locales/English.lua
