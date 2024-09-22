@@ -1,0 +1,18 @@
+package-as: DivineWindow_Paladin
+
+enable-nolib-creation: no
+
+move-folders:
+  DivineWindow: DivineWindow_Paladin
+
+ignore:
+  - LICENSE
+  - README.md
+  - curseForgeText.txt
+  - pkgmeta.yaml
+  - .gitignore
+  - .vscode
+  - .gitignore
+  - .git
+
+license-output: LICENSE.txt
