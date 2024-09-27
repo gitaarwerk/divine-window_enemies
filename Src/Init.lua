@@ -6,7 +6,11 @@ end;
 
 local function registerToAvailableWindowMenu()
     DivineWindow.Support.AvailableWindows.Enemies.SallyWhitemane = {};
-    DivineWindow.Support.AvailableWindows.Enemies.Cactuar = {};
+end
+
+local function registerHints()
+    DivineWindow.ConfigurationScreen.HintsTable["cactuar"] = "??? What's this? This is going to hurt"
+    DivineWindow.ConfigurationScreen.HintsTable["thousand"] = "A thousand stabs from the Cactuar. Ouch!"
 end
 
 local function registerToWindowIndex()
@@ -26,8 +30,13 @@ local function registerToWindowIndex()
                 FX_1 = 4,
                 FX_2 = 12,
             }
-        },
-        Cactuar = {
+        }
+    }
+
+    if (DivineWindow.Utilities.tableContainsKey(DivineWindowGlobalVars.unlockTable, 7397856691)) then
+        DivineWindow.Support.AvailableWindows.Enemies.Cactuar = {};
+
+        DivineWindow.Windows.Enemies["Cactuar"] = {
             Directory = "Interface\\AddOns\\DivineWindow_Enemies\\Src\\Windows\\Cactuar",
             FacetCount = {
                 PART_1 = 16,
@@ -43,19 +52,34 @@ local function registerToWindowIndex()
                 FX_2 = 6,
             }
         }
-    }
+
+        table.insert(DivineWindow.Windows.Enemies, "");
+    end
 end
 
+local function addToMenu()
+    -- If no other enemies are registered, register them.
+    if (not DivineWindow.ConfigurationScreen.AvailableWindows.Enemies) then
+        DivineWindow.ConfigurationScreen.AvailableWindows.Enemies = {}
+    end
+
+    DivineWindow.ConfigurationScreen.AvailableWindows.Enemies["SallyWhitemane"] =
+    { "Enemies", "SallyWhitemane" }
+
+    if (DivineWindow.Utilities.tableContainsKey(DivineWindowGlobalVars.unlockTable, 7397856691)) then
+        DivineWindow.ConfigurationScreen.AvailableWindows.Enemies["Cactuar"] = { "Enemies", "Cactuar" }
+    end
+end
 
 local function eventHandler(self, event, ...)
     if (event == "ADDON_LOADED") then
         local addonName = ...;
         if (addonName == "DivineWindow_Enemies") then
-            print("[DW]: DivineWindow: Enemy windows loaded");
-            -- let the addon know you can set-up Enemies of WOW Divine Windows now.
             registerToWindowIndex();
             registerToAvailableWindowMenu();
             registerLockTable();
+            registerHints();
+            addToMenu();
         end
     end
 end
@@ -68,9 +92,6 @@ local function registerEvents()
 end
 
 local function init()
-    if (DivineWindow) then
-        print("[DW]: Initializing DivineWindow");
-    end
     DivineWindow.frame = registerEvents();
     DivineWindow.frame:SetScript("OnEvent", eventHandler);
 end

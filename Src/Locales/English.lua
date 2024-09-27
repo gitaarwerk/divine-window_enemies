@@ -39,18 +39,4 @@ local function addLocales()
     }
 end
 
-local function addToMenu()
-    -- If no other enemies are registered, register them.
-    if (not DivineWindow.ConfigurationScreen.AvailableWindows.Enemies) then
-        DivineWindow.ConfigurationScreen.AvailableWindows.Enemies = {}
-    end
-
-    DivineWindow.ConfigurationScreen.AvailableWindows.Enemies["SallyWhitemane"] =
-    { "Enemies", "SallyWhitemane" }
-
-    DivineWindow.ConfigurationScreen.AvailableWindows.Enemies["Cactuar"] =
-    { "Enemies", "Cactuar" }
-end
-
 addLocales();
-addToMenu();
