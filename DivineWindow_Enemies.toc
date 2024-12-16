@@ -3,8 +3,8 @@
 ## Notes: Stained glass windows for Divine Window: Enemies of Warcraft
 ## RequiredDeps: DivineWindow
 ## Notes-enEN: a non-typical configurable interface using stained glass design
-## Interface: 110002
-## X-Min-Interface: 110002
+## Interface: 110007
+## X-Min-Interface: 110007
 ## Version: 1
 ## IconTexture: Interface\AddOns\DivineWindow_Enemies\addonIcon.jpg
 ## Author: Darkrider, Dunemaul (EU)
