@@ -1,15 +1,19 @@
 ## Title: Divine Window: Enemies of Warcraft
 ## Title-enEN: Divine Window: Enemies of Warcraft
+
 ## Notes: Stained glass windows for Divine Window: Enemies of Warcraft
 ## Notes-enEN: a non-typical configurable interface using stained glass design
 
 ## RequiredDeps: DivineWindow
 
-## Interface: 11503
-## X-Min-Interface: 11503
+## Interface: 11504
+## X-Min-Interface: 11504
 
 ## Version: @project-version@
 ## IconTexture: Interface\AddOns\DivineWindow_Enemies\addonIcon.jpg
+
+## SavedVariables: DivineWindowGlobalVars
+## SavedVariablesPerCharacter: DivineWindowLocalVars
 
 ## Author: Darkrider, Dunemaul (EU)
 ## LoadOnDemand: 0
