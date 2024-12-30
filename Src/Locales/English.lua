@@ -4,6 +4,7 @@ local function addLocales()
     DivineWindow.Locales[language].AvailableWindows.Enemies = "Enemies";
     DivineWindow.Locales[language].AvailableWindows.SallyWhitemane = "Sally Whitemane";
     DivineWindow.Locales[language].AvailableWindows.Cactuar = "Cactuar";
+    DivineWindow.Locales[language].AvailableWindows.MrBigglesworth = "Mr. Bigglesworth";
 
     DivineWindow.Locales[language].Enemies = {
         SallyWhitemane = {
@@ -36,6 +37,20 @@ local function addLocales()
                 FX_2 = "Flower hat (6)",
             }
         },
+        MrBigglesworth = {
+            WindowPart = {
+                PART_1 = "Window of the Necropolis (33)",
+                PART_2 = "Candle (10)",
+                PART_3 = "Evil potion (15)",
+                PART_4 = "Kitty's favourite table (11)",
+                PART_5 = "Chains (14)",
+                PART_6 = "Mr. Bigglesworth (14)",
+                PART_7 = "Fish bones (13)",
+                PART_8 = "Kel'Thuzad (26)",
+                FX_1 = "The Lich Lord's frost gaze (6)",
+                FX_2 = "Mr Biggles' bones (126)",
+            }
+        }
     }
 end
 

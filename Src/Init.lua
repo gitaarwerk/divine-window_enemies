@@ -6,10 +6,11 @@ end;
 
 local function registerToAvailableWindowMenu()
     DivineWindow.Support.AvailableWindows.Enemies.SallyWhitemane = {};
+    DivineWindow.Support.AvailableWindows.Enemies.MrBigglesworth = {};
 end
 
 local function registerHints()
-    DivineWindow.ConfigurationScreen.HintsTable["cactuar"] = "??? What's this? This is going to hurt"
+    DivineWindow.ConfigurationScreen.HintsTable["cactuar"] = "??? What's this? This is going to hurt!"
     DivineWindow.ConfigurationScreen.HintsTable["thousand"] = "A thousand stabs from the Cactuar. Ouch!"
 end
 
@@ -30,7 +31,22 @@ local function registerToWindowIndex()
                 FX_1 = 4,
                 FX_2 = 12,
             }
-        }
+        },
+        MrBigglesworth = {
+            Directory = "Interface\\AddOns\\DivineWindow_Enemies\\Src\\Windows\\MrBigglesworth",
+            FacetCount = {
+                PART_1 = 33,
+                PART_2 = 10,
+                PART_3 = 15,
+                PART_4 = 11,
+                PART_5 = 14,
+                PART_6 = 14,
+                PART_7 = 13,
+                PART_8 = 26,
+                FX_1 = 16,
+                FX_2 = 126,
+            }
+        },
     }
 
     if (DivineWindow.Utilities.tableContainsKey(DivineWindowGlobalVars.unlockTable, 7397856691)) then
@@ -65,6 +81,8 @@ local function addToMenu()
 
     DivineWindow.ConfigurationScreen.AvailableWindows.Enemies["SallyWhitemane"] =
     { "Enemies", "SallyWhitemane" }
+    DivineWindow.ConfigurationScreen.AvailableWindows.Enemies["MrBigglesworth"] =
+    { "Enemies", "MrBigglesworth" }
 
     if (DivineWindow.Utilities.tableContainsKey(DivineWindowGlobalVars.unlockTable, 7397856691)) then
         DivineWindow.ConfigurationScreen.AvailableWindows.Enemies["Cactuar"] = { "Enemies", "Cactuar" }
