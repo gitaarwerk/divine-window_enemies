@@ -5,6 +5,7 @@ local function addLocales()
     DivineWindow.Locales[language].AvailableWindows.SallyWhitemane = "Sally Whitemane";
     DivineWindow.Locales[language].AvailableWindows.Cactuar = "Cactuar";
     DivineWindow.Locales[language].AvailableWindows.MrBigglesworth = "Mr. Bigglesworth";
+    DivineWindow.Locales[language].AvailableWindows.Xalatath = "Xal'atath";
 
     DivineWindow.Locales[language].Enemies = {
         SallyWhitemane = {
@@ -50,7 +51,25 @@ local function addLocales()
                 FX_1 = "The Lich Lord's frost gaze (6)",
                 FX_2 = "Mr Biggles' bones (126)",
             }
-        }
+        },
+        Xalatath = {
+            WindowPart = {
+                PART_1 = "Endless void (92)",
+                PART_2 = "Azeroth imploding (22)",
+                PART_3 = "Face of evil (6)",
+                PART_4 = "Left shoulder armor (3)",
+                PART_5 = "Right shoulder armor (3)",
+                PART_6 = "Left arm (7)",
+                PART_7 = "Right arm (7)",
+                PART_8 = "Bandaged legs (2)",
+                PART_9 = "Void's cape (3)",
+                PART_10 = "Xal'atath's fragile body (7)",
+                PART_11 = "Galaxy gems (5)",
+                PART_12 = "Blade of the Black Empire (8)",
+                FX_1 = "Void energy (16)",
+                FX_2 = "Strange markings (15)",
+            }
+        },
     }
 end
 
