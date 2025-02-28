@@ -20,7 +20,7 @@
 ## DefaultState: enabled
 
 ## X-Category: UI, Boss, Raids
-## X-Date: 2024-10-21T00:00:00Z
+## X-Date: @build-date@
 ## X-ResetVarsDate: 2024-10-21T00:00:00Z
 ## X-License: All Rights Reserved
 
