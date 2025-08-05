@@ -6,8 +6,8 @@
 
 ## RequiredDeps: DivineWindow
 
-## Interface: 110107
-## X-Min-Interface: 110107
+## Interface: 110107, 110200
+## X-Min-Interface: 110107, 110200
 
 ## Version: @project-version@
 ## IconTexture: Interface\AddOns\DivineWindow_Enemies\addonIcon.jpg
